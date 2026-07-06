@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 84" role="img" aria-label="Yayasan TM Menusantara">
+  <defs>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f9e63"/>
+      <stop offset="1" stop-color="#0b2e22"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(8,14)">
+    <path d="M54 4 C28 2 6 14 4 42 C4 48 6 54 10 56 C34 56 56 40 56 12 C56 8 56 6 54 4 Z" fill="url(#leaf)"/>
+    <path d="M12 54 C20 34 34 18 52 10" fill="none" stroke="#a7e3c1" stroke-width="3" stroke-linecap="round"/>
+    <path d="M30 40 C33 32 39 25 47 21" fill="none" stroke="#a7e3c1" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  <text x="78" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="31" font-weight="700" fill="#0b2e22"><tspan font-size="15" baseline-shift="super" fill="#2f9e63">tm</tspan> Menusantara</text>
+  <text x="80" y="64" font-family="Arial, Helvetica, sans-serif" font-size="9.5" letter-spacing="3.2" fill="#5b6b63">YAYASAN TERATE MEKAR</text>
+</svg>
