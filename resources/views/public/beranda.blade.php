@@ -12,7 +12,6 @@
         <h1 style="color:#fff"><?php echo txt('home_hero_title', 'Memberi manfaat yang <em>berkelanjutan</em> bagi Nusantara.'); ?></h1>
         <p class="lead" style="color:rgba(255,255,255,.85)"><?php echo txt('home_hero_lead', 'Bergerak di bidang pendidikan, pengabdian, ekonomi, seni budaya, dan sarana prasarana &mdash; menghubungkan gagasan, sumber daya, dan masyarakat menjadi manfaat nyata.'); ?></p>
         <div class="hero-n-cta">
-          <a wire:navigate class="btn btn-pill-gold" href="<?php echo e(route('program')); ?>">Lihat Program <span class="btn-pill-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
           <a wire:navigate class="btn btn-ghost-link" href="<?php echo e(route('kontak')); ?>">Hubungi Kami <span class="arw"></span></a>
         </div>
       </div>
@@ -57,10 +56,10 @@
       <div class="impact-n-head reveal">
         <span class="eyebrow on-dark">Dampak Kami</span>
         <h2 id="impact-title">Kebaikan yang tumbuh, terukur dan nyata.</h2>
-        <p>Angka berikut menggambarkan cakupan gerakan Yayasan TM Menusantara bersama masyarakat dan mitra. Nilai dapat disesuaikan melalui pengaturan situs.</p>
+        <p>Angka berikut menggambarkan cakupan gerakan Yayasan TM Menusantara bersama masyarakat dan mitra.</p>
       </div>
       <div class="impact-grid">
-        <div class="impact-cell reveal"><span class="impact-num" data-count="<?php echo e(setting('stat_bidang', 5)); ?>">0</span><span class="impact-label">Bidang program utama</span></div>
+        <div class="impact-cell reveal"><span class="impact-num" data-count="<?php echo e(setting('stat_bidang', 150)); ?>">0</span><span class="impact-label">Pengguna</span></div>
         <div class="impact-cell reveal"><span class="impact-num" data-count="<?php echo e(setting('stat_penerima', 500)); ?>" data-suffix="+">0</span><span class="impact-label">Penerima manfaat</span></div>
         <div class="impact-cell reveal"><span class="impact-num" data-count="<?php echo e(setting('stat_kegiatan', 30)); ?>" data-suffix="+">0</span><span class="impact-label">Kegiatan terlaksana</span></div>
         <div class="impact-cell reveal"><span class="impact-num" data-count="<?php echo e(setting('stat_mitra', 15)); ?>" data-suffix="+">0</span><span class="impact-label">Mitra &amp; relawan</span></div>
@@ -69,10 +68,10 @@
   </section>
 
   <!-- ============ DIVIDER ============ -->
-  <div class="sec-div sec-div-alt"><span class="orn-diamond"></span><span class="orn-line"></span><span class="orn-dots"><span></span><span></span><span></span></span><span class="orn-line"></span><span class="orn-diamond"></span></div>
+  <!-- <div class="sec-div sec-div-alt"><span class="orn-diamond"></span><span class="orn-line"></span><span class="orn-dots"><span></span><span></span><span></span></span><span class="orn-line"></span><span class="orn-diamond"></span></div> -->
 
   <!-- ============ 3. VISI & MISI ============ -->
-  <section class="band-n band-photo" style="background-image:url('<?php echo e(img_setting('home_vm_img', 'https://images.pexels.com/photos/35474230/pexels-photo-35474230.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1600&h=900')); ?>')"><div class="wrap">
+  <!-- <section class="band-n band-photo" style="background-image:url('<?php echo e(img_setting('home_vm_img', 'https://images.pexels.com/photos/35474230/pexels-photo-35474230.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1600&h=900')); ?>')"><div class="wrap">
     <div class="vm-grid">
       <div class="vm-visi reveal">
         <span class="eyebrow">Visi</span>
@@ -89,13 +88,13 @@
         </ol>
       </div>
     </div>
-  </div></section>
+  </div></section> -->
 
   <!-- ============ DIVIDER ============ -->
-  <div class="sec-div"><span class="orn-line"></span><span class="orn-dots"><span></span><span></span><span></span></span><span class="orn-line"></span></div>
+  <!-- <div class="sec-div"><span class="orn-line"></span><span class="orn-dots"><span></span><span></span><span></span></span><span class="orn-line"></span></div> -->
 
   <!-- ============ 4. PROGRAM UNGGULAN ============ -->
-  <section class="band-n"><div class="wrap">
+  <!-- <section class="band-n"><div class="wrap">
     <div class="sec-head-n reveal">
       <span class="eyebrow">Program Unggulan</span>
       <h2>Lima bidang, satu tujuan: manfaat nyata.</h2>
@@ -143,10 +142,10 @@
         <span class="prog-n-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
     </div>
-  </div></section>
+  </div></section> -->
 
   <!-- ============ DIVIDER ============ -->
-  <div class="sec-div sec-div-alt"><span class="orn-dots"><span></span><span></span><span></span></span><span class="orn-line"></span><span class="orn-diamond"></span><span class="orn-line"></span><span class="orn-dots"><span></span><span></span><span></span></span></div>
+  <!-- <div class="sec-div sec-div-alt"><span class="orn-dots"><span></span><span></span><span></span></span><span class="orn-line"></span><span class="orn-diamond"></span><span class="orn-line"></span><span class="orn-dots"><span></span><span></span><span></span></span></div> -->
 
   <!-- ============ 5. MENGAPA KAMI ============ -->
   <section class="band-n why-n-section">
@@ -183,10 +182,10 @@
   </section>
 
   <!-- ============ DIVIDER ============ -->
-  <div class="sec-div"><span class="orn-line"></span><span class="orn-dots"><span></span><span></span><span></span></span><span class="orn-line"></span></div>
+  <!-- <div class="sec-div"><span class="orn-line"></span><span class="orn-dots"><span></span><span></span><span></span></span><span class="orn-line"></span></div> -->
 
   <!-- ============ 6. KEGIATAN TERBARU ============ -->
-  <section class="band-n"><div class="wrap">
+  <!-- <section class="band-n"><div class="wrap">
     <div class="sec-head-n reveal" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;max-width:none">
       <div><span class="eyebrow">Berita &amp; Kegiatan</span><h2 style="margin-bottom:0">Kabar terbaru dari kami.</h2></div>
       <a wire:navigate class="btn btn-oval-line" href="<?php echo e(route('berita')); ?>">Lihat semua <span class="btn-ic-c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
@@ -206,13 +205,13 @@
       <p style="color:var(--muted)">Belum ada berita. Kegiatan terbaru akan tampil di sini.</p>
     @endforelse
     </div>
-  </div></section>
+  </div></section> -->
 
   <!-- ============ DIVIDER ============ -->
-  <div class="sec-div sec-div-alt"><span class="orn-diamond"></span><span class="orn-line"></span><span class="orn-dots"><span></span><span></span><span></span></span><span class="orn-line"></span><span class="orn-diamond"></span></div>
+  <!-- <div class="sec-div sec-div-alt"><span class="orn-diamond"></span><span class="orn-line"></span><span class="orn-dots"><span></span><span></span><span></span></span><span class="orn-line"></span><span class="orn-diamond"></span></div> -->
 
   <!-- ============ 7. KEMITRAAN & DUKUNGAN ============ -->
-  <section class="band-n band-photo" style="background-image:url('<?php echo e(img_setting('home_kemitraan_img', 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1600&h=900')); ?>')"><div class="wrap">
+  <!-- <section class="band-n band-photo" style="background-image:url('<?php echo e(img_setting('home_kemitraan_img', 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1600&h=900')); ?>')"><div class="wrap">
     <div class="cta-n reveal">
       <div class="cta-n-text">
         <span class="eyebrow">Kemitraan &amp; Dukungan</span>
@@ -224,7 +223,7 @@
         <a wire:navigate class="btn btn-oval-line" href="<?php echo e(route('kemitraan')); ?>">Ajukan Kemitraan <span class="btn-ic-c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
     </div>
-  </div></section>
+  </div></section> -->
 
   <!-- ============ DIVIDER ============ -->
   <div class="sec-div"><span class="orn-dots"><span></span><span></span><span></span></span><span class="orn-line"></span><span class="orn-diamond"></span><span class="orn-line"></span><span class="orn-dots"><span></span><span></span><span></span></span></div>

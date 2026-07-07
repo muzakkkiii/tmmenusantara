@@ -1,9 +1,11 @@
 <x-filament-panels::page>
     <form wire:submit="save">
-        <?php echo $this->form; ?>
+        {{ $this->form }}
 
-        <div style="margin-top:1.5rem">
-            <x-filament::button type="submit">Simpan Konten</x-filament::button>
+        <div class="mt-6">
+            <x-filament::button type="submit">
+                Simpan Konten
+            </x-filament::button>
         </div>
     </form>
 </x-filament-panels::page>
