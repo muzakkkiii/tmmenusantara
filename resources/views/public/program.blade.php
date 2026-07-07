@@ -16,7 +16,17 @@
 
     <!-- ============ PROGRAM LIST ============ -->
     @foreach($programs as $p)
-    <?php $cr = $p->cta_route ?? 'daftar'; $routes = ['daftar', 'mitra', 'kontak', 'donasi']; $href = route(in_array($cr, $routes) ? $cr : 'daftar'); $flyer = $p->img ? img_url($p->img) : ('https://images.pexels.com/photos/12949251/pexels-photo-12949251.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=1200'); ?>
+    <?php
+$cr = $p->cta_route ?? 'daftar';
+$routes = ['daftar', 'mitra', 'kontak', 'donasi'];
+$href = route(in_array($cr, $routes) ? $cr : 'daftar');
+
+$img = property_exists($p, 'img') ? $p->img : null;
+
+$flyer = !empty($img)
+    ? img_url($img)
+    : 'https://images.pexels.com/photos/12949251/pexels-photo-12949251.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=1200';
+?>
     <div class="program reveal">
       <a class="p-flyer" href="<?php echo e($flyer); ?>" target="_blank" rel="noopener" style="background-image:url('<?php echo e($flyer); ?>')" aria-label="Lihat flyer <?php echo e($p->judul); ?>"><span class="p-flyer-badge"><?php echo e($p->visual_label ?: 'Program'); ?></span><span class="p-flyer-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span></a>
       <div class="p-body">
