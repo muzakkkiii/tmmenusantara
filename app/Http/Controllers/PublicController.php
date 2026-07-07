@@ -177,9 +177,14 @@ class PublicController extends Controller
     {
         $all = Finance::orderBy('tgl')->get();
 
-        $years = $all->map(fn ($f) => Carbon::parse($f->tgl)->year)
-            ->push((int) date('Y'))
-            ->unique()->sortDesc()->values();
+        $years = collect(
+            $all->pluck('tgl')
+                ->map(fn ($tgl) => Carbon::parse($tgl)->year)
+)
+                ->push((int) date('Y'))
+                ->unique()
+                ->sortDesc()
+                ->values();
 
         $year = (int) $r->input('tahun', $years->first() ?? date('Y'));
 
