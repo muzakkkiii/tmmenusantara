@@ -43,14 +43,14 @@
           <a x-data @click.prevent="$dispatch('open-relawan')" href="<?php echo e(route('relawan')); ?>">Relawan<small>Gabung jadi relawan</small></a>
         </div>
       </div>
-      <div class="nav-item">
+      <!-- <div class="nav-item">
         <a wire:navigate href="<?php echo e(route('transparansi')); ?>" class="nav-link <?php echo (request()->routeIs('transparansi')||request()->routeIs('laporan')||request()->routeIs('sertifikat'))?'active':''; ?>">Transparansi <span class="caret">&#9662;</span></a>
         <div class="dropdown">
           <a wire:navigate href="<?php echo e(route('transparansi')); ?>">Transparansi Keuangan<small>Donasi, penyaluran &amp; saldo</small></a>
           <a wire:navigate href="<?php echo e(route('laporan')); ?>">Laporan Kegiatan<small>Rekap pelaksanaan kegiatan</small></a>
           <a wire:navigate href="<?php echo e(route('sertifikat')); ?>">Sertifikat Pelatihan<small>Lihat &amp; unduh sertifikat pelatihan</small></a>
         </div>
-      </div>
+      </div> -->
       <a wire:navigate href="<?php echo e(route('kontak')); ?>" class="nav-link <?php echo request()->routeIs('kontak')?'active':''; ?>">Kontak</a>
     </nav>
     <div class="nav-cta">
